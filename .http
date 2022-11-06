@@ -1,0 +1,26 @@
+### place order
+POST http://localhost:5000/api/orders
+Content-Type: application/json
+
+{
+    "customerName": "Megan Blue",
+    "email": "megan@email.com",
+    "phone": "8657915",
+    "tablesOrdered": [{"color": "white", "size": "large", "woodType": "pine"}]
+}
+
+### get portfolio
+GET http://localhost:5000/api/portfolio
+
+
+### get all active orders
+GET http://localhost:5000/api/orders
+
+
+### mark order as completed
+PUT http://localhost:5000/api/orders/6367dc86262e19a19bcb93d6
+Content-Type: application/json
+
+{
+    "isCompleted": true
+}
